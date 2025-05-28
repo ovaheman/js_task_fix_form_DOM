@@ -1,3 +1,8 @@
 'use strict';
 
-// write code here
+const form = document.querySelector('form');
+const inputs = form.querySelectorAll('input');
+
+for (const el of inputs) {
+
+}
