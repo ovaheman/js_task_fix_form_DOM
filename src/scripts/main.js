@@ -1,7 +1,5 @@
 'use strict';
 
-// const form = document.querySelector('form');
-const input = document.querySelectorAll('input');
 const inputs = Array.from(document.querySelectorAll('input'));
 
 function getFirstLetterBig(value) {
@@ -24,7 +22,7 @@ inputs.forEach((element) => {
   const idAttribute = element.getAttribute('id');
 
   label.setAttribute('for', idAttribute);
-  console.log(idAttribute);
 
-  label.textContent = element.name;
+  label.style.textTransform = 'none';
+  label.textContent = getFirstLetterBig(element.name.toLowerCase());
 });
